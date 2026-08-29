@@ -3,13 +3,8 @@
 
 name: Check DCO
 on:
-  pull_request:
-    paths:
-      - "packages/nocodb-sdk/**"
-      - "packages/nc-gui/**"
-      - "packages/nc-lib-gui/**"
-      - "packages/nocodb/**"
-
+  push:
+    branches: [main]
 jobs:
   commits_check_job:
     runs-on: ubuntu-22.04
