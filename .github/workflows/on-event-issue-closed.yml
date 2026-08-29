@@ -1,6 +1,8 @@
 name: "On Event : Issue Closed"
 
 on:
+  push:
+    branches: [main]
   issues:
     types: [closed]
 
