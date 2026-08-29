@@ -1,8 +1,7 @@
 name: cleanup caches by branch
 on:
-  pull_request:
-    types:
-      - closed
+  push:
+    branches: [main]
 jobs:
   cleanup:
     runs-on: ubicloud-standard-2
