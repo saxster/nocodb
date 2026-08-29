@@ -5,12 +5,6 @@ on:
     paths:
       - "packages/nocodb/**"
       - ".github/workflows/jest-unit-test.yml"
-  pull_request:
-    types: [opened, reopened, synchronize, ready_for_review, labeled]
-    branches: [develop]
-    paths:
-      - "packages/nocodb/**"
-      - ".github/workflows/jest-unit-test.yml"
   workflow_call:
   # Triggered manually
   workflow_dispatch:
